@@ -78,7 +78,7 @@ function App() {
 				// placeholder="Select"
 				onChange={changeHandler}
 				value={formData.country}
-				className="w-full mx-auto border-gray-400 border-[2px] rounded-md pl-1"
+				className="w-full mx-auto border-gray-400 border-[2px] rounded-md pl-1 cursor-pointer"
 
 			>
 				<option value='India'>India</option>
@@ -155,8 +155,8 @@ function App() {
 					onChange={changeHandler}
 					checkef={formData.comments}
 				/>
-				<label htmlFor="comments" className="font-bold">Comments
-				<p className="font-[500] opacity-50">Get notified when someone posts a comment on posting</p>
+				<label htmlFor="comments" className="font-bold cursor-pointer">Comments
+				<p className="font-[500] opacity-50 pointer-events-none">Get notified when someone posts a comment on posting</p>
 
 				</label>
 			</div>
@@ -172,8 +172,8 @@ function App() {
 					onChange={changeHandler}
 					checkef={formData.candidates}
 				/>
-				<label htmlFor="candidates" className="font-bold">Candidates
-				<p className="font-[500] opacity-50">Get notified when a candidate applied for a job</p>
+				<label htmlFor="candidates" className="font-bold cursor-pointer">Candidates
+				<p className=" appearance-none font-[500] opacity-50">Get notified when a candidate applied for a job</p>
 
 				</label>
 			</div>
@@ -190,7 +190,7 @@ function App() {
 					onChange={changeHandler}
 					checkef={formData.offers}
 				/>
-				<label htmlFor="offers" className="font-bold">Offers
+				<label htmlFor="offers" className="font-bold cursor-pointer">Offers
 				<p className="font-[500] opacity-50">Get notified when a candidate accepts or rejects an offer</p>
 
 				</label>
@@ -214,7 +214,7 @@ function App() {
 					value='everything'
 					
 				/>
-				<label htmlFor="everything" className="font-bold ">Everything</label>
+				<label htmlFor="everything" className="font-bold cursor-pointer">Everything</label>
 			</div>
 			
 
@@ -228,7 +228,7 @@ function App() {
 					onChange={changeHandler}
 					value='same as email'
 				/>
-				<label htmlFor="same as email" className="font-bold ">Same as email</label>
+				<label htmlFor="same as email" className="font-bold cursor-pointer">Same as email</label>
 			</div>
 
 			
@@ -243,7 +243,7 @@ function App() {
 					onChange={changeHandler}
 					value='no push notification'
 				/>
-				<label htmlFor="no push notification" className="font-bold ">No push notification</label>
+				<label htmlFor="no push notification" className="font-bold cursor-pointer">No push notification</label>
 			</div>
 
 			
